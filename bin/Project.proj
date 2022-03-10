@@ -1,0 +1,39 @@
+<PROJECT>
+  <PROPERTIES Name="Project" Description="Test Project Description" Grid="True" />
+  <SOURCES>
+    <SOURCE ID="1" Name="" Type="SG">
+      <CHANNELS>
+        <CHANNEL ID="1" Name="Square_01" Description="" Type="SG" IsEnable="True" IsArchive="False" SGType="Square" MinValue="0" MaxValue="2" />
+        <CHANNEL ID="2" Name="Triangle_01" Description="" Type="SG" IsEnable="True" IsArchive="False" SGType="Triangle" MinValue="0" MaxValue="10" />
+      </CHANNELS>
+    </SOURCE>
+  </SOURCES>
+  <WINDOWS>
+    <WINDOW ID="1" X="0" Y="0" Width="640" Height="480" Name="" BackColor="#FFA9A9A9" WindowType="FullScreen">
+      <ELEMENTS>
+        <SHAPE Type="Rectangle" X="10" Y="10" Width="50" Height="50" Round="0" ThicknessOFF="2" BackColorOFF="#FF606060" BorderColorOFF="#FFFFFFFF" ThicknessON="1" BackColorON="#FFFFA500" BorderColorON="#FF000000" ThicknessFromChannel="True" BackColorFromChannel="True" BorderColorFromChannel="True" ThicknessChannelID="2" BackColorChannelID="2" BorderColorChannelID="2" IsVisible="True" IsVisibleFromChannel="False" IsVisibleChannelID="1" Thickness="1" BackColor="#FFD3D3D3" BorderColor="#FF000000" />
+        <SHAPE Type="Rectangle" X="70" Y="10" Width="50" Height="50" Round="1" ThicknessOFF="2" BackColorOFF="#FF606060" BorderColorOFF="#FFFFFFFF" ThicknessON="1" BackColorON="#FFFFA500" BorderColorON="#FF000000" ThicknessFromChannel="True" BackColorFromChannel="True" BorderColorFromChannel="True" ThicknessChannelID="2" BackColorChannelID="2" BorderColorChannelID="2" IsVisible="True" IsVisibleFromChannel="False" IsVisibleChannelID="1" Thickness="1" BackColor="#FFD3D3D3" BorderColor="#FF000000" />
+        <SHAPE Type="Rectangle" X="130" Y="10" Width="50" Height="50" Round="3" ThicknessOFF="2" BackColorOFF="#FF606060" BorderColorOFF="#FFFFFFFF" ThicknessON="1" BackColorON="#FFFFA500" BorderColorON="#FF000000" ThicknessFromChannel="True" BackColorFromChannel="True" BorderColorFromChannel="True" ThicknessChannelID="2" BackColorChannelID="2" BorderColorChannelID="2" IsVisible="True" IsVisibleFromChannel="False" IsVisibleChannelID="1" Thickness="1" BackColor="#FFD3D3D3" BorderColor="#FF000000" />
+        <SHAPE Type="Rectangle" X="190" Y="10" Width="50" Height="50" Round="5" ThicknessOFF="2" BackColorOFF="#FF606060" BorderColorOFF="#FFFFFFFF" ThicknessON="1" BackColorON="#FFFFA500" BorderColorON="#FF000000" ThicknessFromChannel="True" BackColorFromChannel="True" BorderColorFromChannel="True" ThicknessChannelID="2" BackColorChannelID="2" BorderColorChannelID="2" IsVisible="True" IsVisibleFromChannel="False" IsVisibleChannelID="1" Thickness="1" BackColor="#FFD3D3D3" BorderColor="#FF000000" />
+        <SHAPE Type="Line" X="10" Y="80" DX="50" DY="0" ThicknessOFF="1" BackColorOFF="#FF606060" BorderColorOFF="#FFFFFFFF" ThicknessON="2" BackColorON="#FFFFA500" BorderColorON="#FF000000" ThicknessFromChannel="False" BackColorFromChannel="False" BorderColorFromChannel="False" ThicknessChannelID="2" BackColorChannelID="2" BorderColorChannelID="2" IsVisible="True" IsVisibleFromChannel="False" IsVisibleChannelID="1" Thickness="1" BackColor="#FFD3D3D3" BorderColor="#FF000000" />
+        <SHAPE Type="Path" X="70" Y="80" ThicknessOFF="1" BackColorOFF="#FF606060" BorderColorOFF="#FFFFFFFF" ThicknessON="2" BackColorON="#FFFFA500" BorderColorON="#FF000000" ThicknessFromChannel="False" BackColorFromChannel="False" BorderColorFromChannel="False" ThicknessChannelID="2" BackColorChannelID="2" BorderColorChannelID="2" IsVisible="True" IsVisibleFromChannel="False" IsVisibleChannelID="1" Thickness="1" BackColor="#FFD3D3D3" BorderColor="#FF000000">
+          <POINTS>
+            <POINT X="20" Y="-10" />
+            <POINT X="20" Y="20" />
+            <POINT X="20" Y="-10" />
+          </POINTS>
+        </SHAPE>
+        <SHAPE Type="Circle" X="250" Y="10" Radius="25" ThicknessOFF="2" BackColorOFF="#FF606060" BorderColorOFF="#FFFFFFFF" ThicknessON="1" BackColorON="#FFFFA500" BorderColorON="#FF000000" ThicknessFromChannel="True" BackColorFromChannel="True" BorderColorFromChannel="True" ThicknessChannelID="2" BackColorChannelID="2" BorderColorChannelID="2" IsVisible="True" IsVisibleFromChannel="False" IsVisibleChannelID="2" Thickness="1" BackColor="#FFD3D3D3" BorderColor="#FF000000" />
+        <SHAPE Type="Text" X="10" Y="100" Value="Text:" ThicknessOFF="1" BackColorOFF="#FF606060" BorderColorOFF="#FFFFFFFF" ThicknessON="2" BackColorON="#FFFFA500" BorderColorON="#FF000000" ThicknessFromChannel="False" BackColorFromChannel="False" BorderColorFromChannel="False" ThicknessChannelID="2" BackColorChannelID="2" BorderColorChannelID="2" IsVisible="True" IsVisibleFromChannel="False" IsVisibleChannelID="2" Thickness="0" BackColor="#00FFFFFF" BorderColor="#00FFFFFF" />
+        <SHAPE Type="Text" X="100" Y="100" Value="CAT" ThicknessOFF="1" BackColorOFF="#FF606060" BorderColorOFF="#FFFFFFFF" ThicknessON="2" BackColorON="#FFFFA500" BorderColorON="#FF000000" ThicknessFromChannel="False" BackColorFromChannel="False" BorderColorFromChannel="False" ThicknessChannelID="2" BackColorChannelID="2" BorderColorChannelID="2" IsVisible="True" IsVisibleFromChannel="False" IsVisibleChannelID="2" Thickness="0" BackColor="#00FFFFFF" BorderColor="#00FFFFFF" />
+        <SHAPE Type="Text" X="10" Y="140" Value="Button:" ThicknessOFF="1" BackColorOFF="#FF606060" BorderColorOFF="#FFFFFFFF" ThicknessON="2" BackColorON="#FFFFA500" BorderColorON="#FF000000" ThicknessFromChannel="False" BackColorFromChannel="False" BorderColorFromChannel="False" ThicknessChannelID="2" BackColorChannelID="2" BorderColorChannelID="2" IsVisible="True" IsVisibleFromChannel="False" IsVisibleChannelID="2" Thickness="0" BackColor="#00FFFFFF" BorderColor="#00FFFFFF" />
+        <CONTROL Type="Button" X="100" Y="140" Width="80" Height="30" ChannelID="4" ButtonType="Moment" BackColorOFF="#FFD3D3D3" BackColorON="#FF808080" Round="5" IsVisible="True" IsVisibleFromChannel="False" IsVisibleChannelID="0" Thickness="1" BackColor="#FFD3D3D3" BorderColor="#FF000000" />
+        <SHAPE Type="Text" X="10" Y="180" Value="NField:" ThicknessOFF="1" BackColorOFF="#FF606060" BorderColorOFF="#FFFFFFFF" ThicknessON="2" BackColorON="#FFFFA500" BorderColorON="#FF000000" ThicknessFromChannel="False" BackColorFromChannel="False" BorderColorFromChannel="False" ThicknessChannelID="2" BackColorChannelID="2" BorderColorChannelID="2" IsVisible="True" IsVisibleFromChannel="False" IsVisibleChannelID="2" Thickness="0" BackColor="#00FFFFFF" BorderColor="#00FFFFFF" />
+        <CONTROL Type="NField" X="100" Y="180" Width="80" Height="30" ChannelID="2" TextColor="#FF000000" IsVisible="True" IsVisibleFromChannel="False" IsVisibleChannelID="0" Thickness="1" BackColor="#FF606060" BorderColor="#FF000000" />
+        <SHAPE Type="Text" X="10" Y="230" Value="Bars:" ThicknessOFF="1" BackColorOFF="#FF606060" BorderColorOFF="#00000000" ThicknessON="2" BackColorON="#FFFFA500" BorderColorON="#FF000000" ThicknessFromChannel="False" BackColorFromChannel="False" BorderColorFromChannel="False" ThicknessChannelID="2" BackColorChannelID="2" BorderColorChannelID="2" IsVisible="True" IsVisibleFromChannel="False" IsVisibleChannelID="2" Thickness="0" BackColor="#00FFFFFF" BorderColor="#00FFFFFF" />
+        <CONTROL Type="Bar" X="100" Y="220" Width="20" Height="50" ChannelID="2" Orientation="Vertical" BarColor="#FFFFA500" IsVisible="True" IsVisibleFromChannel="False" IsVisibleChannelID="0" Thickness="1" BackColor="#FF606060" BorderColor="#FF000000" />
+        <CONTROL Type="Bar" X="130" Y="250" Width="50" Height="20" ChannelID="2" Orientation="Horizontal" BarColor="#FFFFA500" IsVisible="True" IsVisibleFromChannel="False" IsVisibleChannelID="0" Thickness="1" BackColor="#FF606060" BorderColor="#FF000000" />
+      </ELEMENTS>
+    </WINDOW>
+  </WINDOWS>
+</PROJECT>

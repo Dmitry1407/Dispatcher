@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{503D8EBB-4A44-4B86-8F38-F2F83011FDF3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Core</RootNamespace>
+    <AssemblyName>Core</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <WarningLevel>0</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Modbus">
+      <HintPath>..\3rd\NModbus\Modbus.dll</HintPath>
+    </Reference>
+    <Reference Include="OPCdotNETLib">
+      <HintPath>..\3rd\OPCDotNet\OPCdotNETLib.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite">
+      <HintPath>..\3rd\SQLite\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="model\core\archive\Archive.cs" />
+    <Compile Include="model\core\archive\ArchiveItem.cs" />
+    <Compile Include="model\core\archive\ArchiveType.cs" />
+    <Compile Include="model\core\archive\ChannelsArchiveItem.cs" />
+    <Compile Include="model\core\archive\ChannelsArchive.cs" />
+    <Compile Include="model\core\archive\EventsArchive.cs" />
+    <Compile Include="model\core\archive\EventsArchiveItem.cs" />
+    <Compile Include="model\core\channel\IOMode.cs" />
+    <Compile Include="model\core\device\Device.cs" />
+    <Compile Include="model\core\Parent.cs" />
+    <Compile Include="model\core\source\modbus\byteorder\R16ByteOrder.cs" />
+    <Compile Include="model\core\source\modbus\byteorder\R32ByteOrder.cs" />
+    <Compile Include="model\core\source\modbus\MBDevice.cs" />
+    <Compile Include="model\core\source\sg\SGType.cs" />
+    <Compile Include="model\core\source\sg\SGChannel.cs" />
+    <Compile Include="model\core\source\modbus\ModbusDRV.cs" />
+    <Compile Include="model\core\source\modbus\PortType.cs" />
+    <Compile Include="model\core\channel\BitArrayChannel.cs" />
+    <Compile Include="model\core\channel\ByteChannel.cs" />
+    <Compile Include="model\core\channel\BitChannel.cs" />
+    <Compile Include="model\core\channel\DoubleChannel.cs" />
+    <Compile Include="model\core\channel\Int32Channel.cs" />
+    <Compile Include="model\core\channel\FloatChannel.cs" />
+    <Compile Include="model\core\channel\SByteChannel.cs" />
+    <Compile Include="model\core\channel\ChannelGroup.cs" />
+    <Compile Include="model\core\channel\Channel.cs" />
+    <Compile Include="model\core\channel\ChannelStatus.cs" />
+    <Compile Include="model\core\channel\ChannelType.cs" />
+    <Compile Include="model\core\channel\Int16Channel.cs" />
+    <Compile Include="model\core\channel\UInt16Channel.cs" />
+    <Compile Include="model\core\channel\UInt32Channel.cs" />
+    <Compile Include="model\core\source\modbus\ModbusSRC.cs" />
+    <Compile Include="model\core\source\opcda\OPCDASRC.cs" />
+    <Compile Include="model\core\source\sg\SGSRC.cs" />
+    <Compile Include="model\core\source\Source.cs" />
+    <Compile Include="model\core\source\SourceThread.cs" />
+    <Compile Include="model\core\source\SourceType.cs" />
+    <Compile Include="model\design\graphics\control\Bar.cs" />
+    <Compile Include="model\design\graphics\control\Button.cs" />
+    <Compile Include="model\design\graphics\control\ButtonType.cs" />
+    <Compile Include="model\design\graphics\control\Control.cs" />
+    <Compile Include="model\design\graphics\control\ControlType.cs" />
+    <Compile Include="model\design\graphics\control\Journal.cs" />
+    <Compile Include="model\design\graphics\control\NField.cs" />
+    <Compile Include="model\design\graphics\control\Trend.cs" />
+    <Compile Include="model\core\ParentType.cs" />
+    <Compile Include="model\design\graphics\GElementType.cs" />
+    <Compile Include="model\design\window\WindowType.cs" />
+    <Compile Include="service\propertygrid\PropertySorter.cs" />
+    <Compile Include="service\propertygrid\SortedCategoryAttribute.cs" />
+    <Compile Include="model\design\graphics\GElementGroup.cs" />
+    <Compile Include="model\design\graphics\shape\Text.cs" />
+    <Compile Include="model\design\graphics\GElement.cs" />
+    <Compile Include="model\design\graphics\shape\Picture.cs" />
+    <Compile Include="model\design\graphics\shape\Circle.cs" />
+    <Compile Include="model\design\graphics\shape\Line.cs" />
+    <Compile Include="model\design\graphics\shape\Point.cs" />
+    <Compile Include="model\design\graphics\shape\Polygon.cs" />
+    <Compile Include="model\design\graphics\shape\Path.cs" />
+    <Compile Include="model\design\graphics\shape\Rectangle.cs" />
+    <Compile Include="model\design\graphics\shape\Shape.cs" />
+    <Compile Include="model\design\graphics\shape\ShapeType.cs" />
+    <Compile Include="model\design\sound\Sound.cs" />
+    <Compile Include="model\design\window\Window.cs" />
+    <Compile Include="model\Model.cs" />
+    <Compile Include="model\ProjectProperties.cs" />
+    <Compile Include="model\WorkMode.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="service\graphics\BarOrientation.cs" />
+    <Compile Include="service\graphics\HAlignment.cs" />
+    <Compile Include="service\graphics\VAlignment.cs" />
+    <Compile Include="service\ProjectReader.cs" />
+    <Compile Include="service\ProjectWriter.cs" />
+    <Compile Include="service\ProjXmlNames.cs" />
+    <Compile Include="service\Utils.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
